@@ -17,7 +17,8 @@ class NewsBuilder extends StatelessWidget {
           'Top ${category.replaceFirst(category[0], category[0].toUpperCase())} Headlines',
           style: const TextStyle(color: Colors.black),
         ),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.white,
+        iconTheme: const IconThemeData(color: Colors.black),
       ),
       body: FutureBuilder(
         future: client.getArticle(category),
