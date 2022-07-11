@@ -1,8 +1,8 @@
 // @dart=2.9
 import 'package:newsapp/services/api_service.dart';
 import 'package:flutter/material.dart';
-import 'components/customListTile.dart';
-import 'model/article_model.dart';
+import '../components/customListTile.dart';
+import '../model/article_model.dart';
 
 class Builder extends StatelessWidget {
   ApiService client = ApiService();
