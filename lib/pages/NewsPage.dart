@@ -4,24 +4,30 @@ import 'package:flutter/material.dart';
 import '../components/customListTile.dart';
 import '../model/article_model.dart';
 
-class NewsBuilder extends StatelessWidget {
+class NewsBuilder extends StatefulWidget {
+  final String category;
+  const NewsBuilder({Key key, this.category}) : super(key: key);
+
+  @override
+  State<NewsBuilder> createState() => _NewsBuilderState();
+}
+
+class _NewsBuilderState extends State<NewsBuilder> {
   ApiService client = ApiService();
-  String category;
-  NewsBuilder({Key key, this.category}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Top ${category.replaceFirst(category[0], category[0].toUpperCase())} Headlines',
+          'Top ${widget.category.replaceFirst(widget.category[0], widget.category[0].toUpperCase())} Headlines',
           style: const TextStyle(color: Colors.black),
         ),
         backgroundColor: Colors.white,
         iconTheme: const IconThemeData(color: Colors.black),
       ),
       body: FutureBuilder(
-        future: client.getArticle(category),
+        future: client.getArticle(widget.category),
         builder: (BuildContext context, AsyncSnapshot<List<Article>> snapshot) {
           if (snapshot.hasData) {
             List<Article> articles = snapshot.data;
