@@ -47,6 +47,7 @@ class _HomePageState extends State<HomePage> {
           child: ListView(
             children: [
               ListTile(
+                leading: const Icon(Icons.business),
                 title: const Text('Business'),
                 onTap: () {
                   Navigator.pop(context);
@@ -58,6 +59,7 @@ class _HomePageState extends State<HomePage> {
                 },
               ),
               ListTile(
+                leading: const Icon(Icons.movie),
                 title: const Text('Entertainment'),
                 onTap: () {
                   Navigator.pop(context);
@@ -69,6 +71,7 @@ class _HomePageState extends State<HomePage> {
                 },
               ),
               ListTile(
+                leading: const Icon(Icons.sports_football),
                 title: const Text('Sports'),
                 onTap: () {
                   Navigator.pop(context);
@@ -80,6 +83,7 @@ class _HomePageState extends State<HomePage> {
                 },
               ),
               ListTile(
+                leading: const Icon(Icons.health_and_safety),
                 title: const Text('Health'),
                 onTap: () {
                   Navigator.pop(context);
@@ -91,6 +95,7 @@ class _HomePageState extends State<HomePage> {
                 },
               ),
               ListTile(
+                leading: const Icon(Icons.science),
                 title: const Text('Science'),
                 onTap: () {
                   Navigator.pop(context);
@@ -102,6 +107,7 @@ class _HomePageState extends State<HomePage> {
                 },
               ),
               ListTile(
+                leading: const Icon(Icons.lightbulb),
                 title: const Text('Technology'),
                 onTap: () {
                   Navigator.pop(context);
