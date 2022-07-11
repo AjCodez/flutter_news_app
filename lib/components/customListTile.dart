@@ -37,7 +37,9 @@ Widget customListTile(Article article, BuildContext context) {
               //let's add the height
 
               image: DecorationImage(
-                  image: NetworkImage(article.urlToImage), fit: BoxFit.cover),
+                  image: NetworkImage(article.urlToImage ??
+                      'https://cdn.discordapp.com/attachments/787712939133108275/996075703470669946/img.png'),
+                  fit: BoxFit.cover),
               borderRadius: BorderRadius.circular(12.0),
             ),
           ),

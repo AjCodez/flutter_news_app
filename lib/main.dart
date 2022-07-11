@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
             List<Article> articles = snapshot.data;
             return ListView.builder(
               //Now let's create our custom List tile
-              itemCount: articles?.length,
+              itemCount: articles.length,
               itemBuilder: (context, index) =>
                   customListTile(articles[index], context),
             );
