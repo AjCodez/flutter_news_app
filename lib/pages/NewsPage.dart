@@ -4,14 +4,15 @@ import 'package:flutter/material.dart';
 import '../components/customListTile.dart';
 import '../model/article_model.dart';
 
-class Builder extends StatelessWidget {
+class NewsBuilder extends StatelessWidget {
   ApiService client = ApiService();
-  Builder({Key key}) : super(key: key);
+  String category;
+  NewsBuilder({Key key, this.category}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-      future: client.getArticle(),
+      future: client.getArticle(category),
       builder: (BuildContext context, AsyncSnapshot<List<Article>> snapshot) {
         //let's check if we got a response or not
         if (snapshot.hasData) {

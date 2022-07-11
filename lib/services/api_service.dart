@@ -14,14 +14,14 @@ class ApiService {
 
   //NOTE: make sure to use your OWN apikey, you can make a free acount and
   // choose a developer option it's FREE
-  final endPointUrl =
-      "http://newsapi.org/v2/top-headlines?country=in&category=general&apiKey=504b3bd564c84625aa36b2148c04a0ef";
 
   //Now let's create the http request function
   // but first let's import the http package
 
-  Future<List<Article>> getArticle() async {
-    Response res = await get(endPointUrl);
+  Future<List<Article>> getArticle(String cat) async {
+    String category = cat;
+    Response res = await get(
+        "http://newsapi.org/v2/top-headlines?country=in&category=$category&apiKey=504b3bd564c84625aa36b2148c04a0ef");
 
     //first of all let's check that we got a 200 statu code: this mean that the request was a succes
     if (res.statusCode == 200) {

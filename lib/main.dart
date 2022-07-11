@@ -1,4 +1,5 @@
 // @dart=2.9
+import 'package:newsapp/pages/NewsPage.dart';
 import 'package:newsapp/services/api_service.dart';
 import 'package:flutter/material.dart';
 import 'components/customListTile.dart';
@@ -9,7 +10,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -34,27 +34,30 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.white,
         iconTheme: const IconThemeData(color: Colors.black),
       ),
+      body: NewsBuilder(
+        category: 'general',
+      ),
 
       //Now let's call the APi services with futurebuilder wiget
-      body: FutureBuilder(
-        future: client.getArticle(),
-        builder: (BuildContext context, AsyncSnapshot<List<Article>> snapshot) {
-          //let's check if we got a response or not
-          if (snapshot.hasData) {
-            //Now let's make a list of articles
-            List<Article> articles = snapshot.data;
-            return ListView.builder(
-              //Now let's create our custom List tile
-              itemCount: articles.length,
-              itemBuilder: (context, index) =>
-                  customListTile(articles[index], context),
-            );
-          }
-          return const Center(
-            child: CircularProgressIndicator(),
-          );
-        },
-      ),
+      // body: FutureBuilder(
+      //   future: client.getArticle('sports'),
+      //   builder: (BuildContext context, AsyncSnapshot<List<Article>> snapshot) {
+      //     //let's check if we got a response or not
+      //     if (snapshot.hasData) {
+      //       //Now let's make a list of articles
+      //       List<Article> articles = snapshot.data;
+      //       return ListView.builder(
+      //         //Now let's create our custom List tile
+      //         itemCount: articles.length,
+      //         itemBuilder: (context, index) =>
+      //             customListTile(articles[index], context),
+      //       );
+      //     }
+      //     return const Center(
+      //       child: CircularProgressIndicator(),
+      //     );
+      //   },
+      // ),
       drawer: Drawer(
         child: ListView(
           children: const [
