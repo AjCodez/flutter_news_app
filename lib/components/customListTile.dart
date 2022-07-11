@@ -5,6 +5,8 @@ import 'package:newsapp/model/article_model.dart';
 import 'package:newsapp/pages/articles_details_page.dart';
 import 'package:flutter/material.dart';
 
+import '../main.dart';
+
 Widget customListTile(Article article, BuildContext context) {
   return InkWell(
     onTap: () {
@@ -19,7 +21,7 @@ Widget customListTile(Article article, BuildContext context) {
       margin: EdgeInsets.all(12.0),
       padding: EdgeInsets.all(8.0),
       decoration: BoxDecoration(
-          color: Colors.white,
+          color: Theme.of(context).primaryColor,
           borderRadius: BorderRadius.circular(12.0),
           boxShadow: [
             BoxShadow(
@@ -50,14 +52,14 @@ Widget customListTile(Article article, BuildContext context) {
           Container(
             padding: EdgeInsets.all(6.0),
             decoration: BoxDecoration(
-              color: Colors.red,
+              color: Colors.cyan,
               borderRadius: BorderRadius.circular(30.0),
             ),
             child: Text(
               article.source.name,
               style: TextStyle(
-                color: Colors.white,
-              ),
+                  //color: Colors.white,
+                  ),
             ),
           ),
           SizedBox(
