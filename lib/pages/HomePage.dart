@@ -18,102 +18,102 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          "Top General News",
-          style: TextStyle(color: Colors.black),
+        appBar: AppBar(
+          title: const Text(
+            "Top General News",
+            style: TextStyle(color: Colors.black),
+          ),
+          backgroundColor: Colors.white,
+          iconTheme: const IconThemeData(color: Colors.black),
         ),
-        backgroundColor: Colors.white,
-        iconTheme: const IconThemeData(color: Colors.black),
-      ),
-      body: FutureBuilder(
-        future: client.getArticle('general'),
-        builder: (BuildContext context, AsyncSnapshot<List<Article>> snapshot) {
-          if (snapshot.hasData) {
-            List<Article> articles = snapshot.data;
-            return ListView.builder(
-              itemCount: articles.length,
-              itemBuilder: (context, index) =>
-                  customListTile(articles[index], context),
+        body: FutureBuilder(
+          future: client.getArticle('general'),
+          builder:
+              (BuildContext context, AsyncSnapshot<List<Article>> snapshot) {
+            if (snapshot.hasData) {
+              List<Article> articles = snapshot.data;
+              return ListView.builder(
+                itemCount: articles.length,
+                itemBuilder: (context, index) =>
+                    customListTile(articles[index], context),
+              );
+            }
+            return const Center(
+              child: CircularProgressIndicator(),
             );
-          }
-          return const Center(
-            child: CircularProgressIndicator(),
-          );
-        },
-      ),
-      drawer: Drawer(
-        child: ListView(
-          children: [
-            ListTile(
-              title: const Text('Business'),
-              onTap: () {
-                Navigator.pop(context);
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return NewsBuilder(
-                    category: 'business',
-                  );
-                }));
-              },
-            ),
-            ListTile(
-              title: const Text('Entertainment'),
-              onTap: () {
-                Navigator.pop(context);
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return NewsBuilder(
-                    category: 'entertainment',
-                  );
-                }));
-              },
-            ),
-            ListTile(
-              title: const Text('Sports'),
-              onTap: () {
-                Navigator.pop(context);
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return NewsBuilder(
-                    category: 'sports',
-                  );
-                }));
-              },
-            ),
-            ListTile(
-              title: const Text('Health'),
-              onTap: () {
-                Navigator.pop(context);
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return NewsBuilder(
-                    category: 'health',
-                  );
-                }));
-              },
-            ),
-            ListTile(
-              title: const Text('Science'),
-              onTap: () {
-                Navigator.pop(context);
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return NewsBuilder(
-                    category: 'science',
-                  );
-                }));
-              },
-            ),
-            ListTile(
-              title: const Text('Technology'),
-              onTap: () {
-                Navigator.pop(context);
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return NewsBuilder(
-                    category: 'technology',
-                  );
-                }));
-              },
-            ),
-          ],
+          },
         ),
-      ),
-    );
+        drawer: Drawer(
+          child: ListView(
+            children: [
+              ListTile(
+                title: const Text('Business'),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return NewsBuilder(
+                      category: 'business',
+                    );
+                  }));
+                },
+              ),
+              ListTile(
+                title: const Text('Entertainment'),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return NewsBuilder(
+                      category: 'entertainment',
+                    );
+                  }));
+                },
+              ),
+              ListTile(
+                title: const Text('Sports'),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return NewsBuilder(
+                      category: 'sports',
+                    );
+                  }));
+                },
+              ),
+              ListTile(
+                title: const Text('Health'),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return NewsBuilder(
+                      category: 'health',
+                    );
+                  }));
+                },
+              ),
+              ListTile(
+                title: const Text('Science'),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return NewsBuilder(
+                      category: 'science',
+                    );
+                  }));
+                },
+              ),
+              ListTile(
+                title: const Text('Technology'),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return NewsBuilder(
+                      category: 'technology',
+                    );
+                  }));
+                },
+              ),
+            ],
+          ),
+        ));
   }
 }
