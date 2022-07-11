@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
             theme: ThemeData.light().copyWith(
-              appBarTheme: AppBarTheme(color: Colors.redAccent),
+              appBarTheme: const AppBarTheme(color: Colors.redAccent),
               primaryColor: Colors.red[50],
             ),
             darkTheme: ThemeData.dark(),

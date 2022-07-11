@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
           appBar: AppBar(
             title: const Text(
-              "HeadLines",
+              "Top HeadLines",
             ),
             actions: [
               IconButton(
