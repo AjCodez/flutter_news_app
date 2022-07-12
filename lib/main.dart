@@ -21,17 +21,16 @@ class MyApp extends StatelessWidget {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
             theme: ThemeData.light().copyWith(
-                appBarTheme: const AppBarTheme(
-                  color: Color(0xFF326789),
-                ),
-                primaryColor: Color(0xFF78A6C8),
-                //textTheme: TextTheme(titleLarge: ),
-                scaffoldBackgroundColor: Color(0xFFE9EEF2),
-                drawerTheme: DrawerThemeData(
-                  elevation: 30,
-                  backgroundColor: Color(0xFFE9EEF2),
-                ),
-                iconTheme: IconThemeData(size: 30)),
+              appBarTheme: const AppBarTheme(
+                color: Color(0xFF326789),
+              ),
+              primaryColor: Color(0xFF78A6C8),
+              scaffoldBackgroundColor: Color(0xFFE9EEF2),
+              drawerTheme: DrawerThemeData(
+                backgroundColor: Color(0xFFE9EEF2),
+              ),
+              iconTheme: IconThemeData(size: 30),
+            ),
             darkTheme: ThemeData.dark().copyWith(
               iconTheme: IconThemeData(size: 30, color: Colors.white),
             ),
