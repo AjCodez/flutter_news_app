@@ -21,10 +21,9 @@ class _NewsBuilderState extends State<NewsBuilder> {
       appBar: AppBar(
         title: Text(
           'Top ${widget.category.replaceFirst(widget.category[0], widget.category[0].toUpperCase())} Headlines',
-          style: const TextStyle(color: Colors.black),
         ),
-        backgroundColor: Colors.white,
-        iconTheme: const IconThemeData(color: Colors.black),
+        //backgroundColor: Colors.white,
+        //iconTheme: const IconThemeData(color: Colors.black),
       ),
       body: FutureBuilder(
         future: client.getArticle(widget.category),
