@@ -22,24 +22,25 @@ class MyApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             theme: ThemeData.light().copyWith(
               appBarTheme: const AppBarTheme(
-                color: Color(0xFF326789),
-              ),
-              primaryColor: Color(0xFF78A6C8),
-              scaffoldBackgroundColor: Color(0xFFE9EEF2),
-              drawerTheme: DrawerThemeData(
-                backgroundColor: Color(0xFFE9EEF2),
-              ),
-              iconTheme: IconThemeData(size: 30),
-            ),
-            darkTheme: ThemeData.dark().copyWith(
-              iconTheme: IconThemeData(size: 30, color: Colors.white),
-            ),
-            themeMode: currentMode,
-            home: const HomePage(),
-            routes: {
-              '/news/': (context) => NewsBuilder(),
-            },
-          );
         });
   }
 }
+
+color: Color(0xFF169EAD),
+),
+primaryColor: Color(0xFFD6E3E3),
+scaffoldBackgroundColor: Color(0xFFEAEBED),
+drawerTheme: DrawerThemeData(
+backgroundColor: Color(0xFFE9EEF2),
+),
+iconTheme: IconThemeData(size: 30),
+),
+darkTheme: ThemeData.dark().copyWith(
+iconTheme: IconThemeData(size: 30, color: Colors.white),
+),
+themeMode: currentMode,
+home: const HomePage(),
+routes: {
+'/news/': (context) => NewsBuilder(),
+},
+);
