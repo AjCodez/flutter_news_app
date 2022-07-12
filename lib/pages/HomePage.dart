@@ -1,10 +1,11 @@
 // @dart=2.9
 import 'package:newsapp/components/customListTile.dart';
 import 'package:newsapp/model/article_model.dart';
-import 'package:newsapp/pages/NewsPage.dart';
 import 'package:newsapp/services/api_service.dart';
 import 'package:flutter/material.dart';
 import 'package:newsapp/main.dart';
+
+import '../components/DrawerTile.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key key}) : super(key: key);
@@ -26,15 +27,18 @@ class _HomePageState extends State<HomePage> {
           ),
           actions: [
             IconButton(
-                icon: Icon(MyApp.themeNotifier.value == ThemeMode.light
-                    ? Icons.dark_mode
-                    : Icons.light_mode),
-                onPressed: () {
+              icon: Icon(MyApp.themeNotifier.value == ThemeMode.light
+                  ? Icons.dark_mode
+                  : Icons.light_mode),
+              onPressed: () {
+                setState(() {
                   MyApp.themeNotifier.value =
                       MyApp.themeNotifier.value == ThemeMode.light
                           ? ThemeMode.dark
                           : ThemeMode.light;
-                }),
+                });
+              },
+            ),
           ],
           //iconTheme: const IconThemeData(color: Colors.black),
         ),
@@ -58,78 +62,12 @@ class _HomePageState extends State<HomePage> {
         drawer: Drawer(
           child: ListView(
             children: [
-              ListTile(
-                leading: const Icon(Icons.business),
-                title: const Text('Business'),
-                onTap: () {
-                  Navigator.pop(context);
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return NewsBuilder(
-                      category: 'business',
-                    );
-                  }));
-                },
-              ),
-              ListTile(
-                leading: const Icon(Icons.movie),
-                title: const Text('Entertainment'),
-                onTap: () {
-                  Navigator.pop(context);
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return NewsBuilder(
-                      category: 'entertainment',
-                    );
-                  }));
-                },
-              ),
-              ListTile(
-                leading: const Icon(Icons.sports_football),
-                title: const Text('Sports'),
-                onTap: () {
-                  Navigator.pop(context);
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return NewsBuilder(
-                      category: 'sports',
-                    );
-                  }));
-                },
-              ),
-              ListTile(
-                leading: const Icon(Icons.health_and_safety),
-                title: const Text('Health'),
-                onTap: () {
-                  Navigator.pop(context);
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return NewsBuilder(
-                      category: 'health',
-                    );
-                  }));
-                },
-              ),
-              ListTile(
-                leading: const Icon(Icons.science),
-                title: const Text('Science'),
-                onTap: () {
-                  Navigator.pop(context);
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return NewsBuilder(
-                      category: 'science',
-                    );
-                  }));
-                },
-              ),
-              ListTile(
-                leading: const Icon(Icons.lightbulb),
-                title: const Text('Technology'),
-                onTap: () {
-                  Navigator.pop(context);
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return NewsBuilder(
-                      category: 'technology',
-                    );
-                  }));
-                },
-              ),
+              DrawerTile(Icons.business, 'Business'),
+              DrawerTile(Icons.movie, 'Entertainment'),
+              DrawerTile(Icons.sports_basketball, 'Sports'),
+              DrawerTile(Icons.health_and_safety, 'Health'),
+              DrawerTile(Icons.science, 'Science'),
+              DrawerTile(Icons.lightbulb, 'Technology'),
             ],
           ),
         ),
