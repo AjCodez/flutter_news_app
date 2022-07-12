@@ -62,6 +62,14 @@ class _HomePageState extends State<HomePage> {
         drawer: Drawer(
           child: ListView(
             children: [
+              const DrawerHeader(
+                decoration:
+                    BoxDecoration(color: Color.fromARGB(255, 231, 231, 231)),
+                child: Image(
+                  image: NetworkImage(
+                      'https://cdn.discordapp.com/attachments/787712939133108275/996437230707032095/know_more1.png'),
+                ),
+              ),
               DrawerTile(Icons.business, 'Business'),
               DrawerTile(Icons.movie, 'Entertainment'),
               DrawerTile(Icons.sports_basketball, 'Sports'),
