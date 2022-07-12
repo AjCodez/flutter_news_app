@@ -67,7 +67,7 @@ class _HomePageState extends State<HomePage> {
                     BoxDecoration(color: Color.fromARGB(255, 231, 231, 231)),
                 child: Image(
                   image: NetworkImage(
-                      'https://cdn.discordapp.com/attachments/787712939133108275/996437230707032095/know_more1.png'),
+                      'https://cdn.discordapp.com/attachments/787712939133108275/996446192315682987/know_more2.jpg'),
                 ),
               ),
               DrawerTile(Icons.business, 'Business'),
