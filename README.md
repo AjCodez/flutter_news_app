@@ -3,8 +3,6 @@ A news app to keep yourself updated with latest things happening around you.
 
 # App UI
 
-![](https://github.com/AjCodez/flutter_news_app/blob/master/Screenshots/know%20more.gif)
-
 <p align="center">
   <img src="https://github.com/AjCodez/flutter_news_app/blob/master/Screenshots/know%20more.gif" width="300px" />
 </p>
