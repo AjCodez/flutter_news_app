@@ -4,7 +4,7 @@ A news app to keep yourself updated with latest things happening around you.
 # App UI
 
 <p align="center">
-  <img src="https://github.com/AjCodez/flutter_news_app/blob/master/Screenshots/know%20more.gif" width="300px" style="border: 5px solid #fff"/>
+  <img src="https://github.com/AjCodez/flutter_news_app/blob/master/Screenshots/know%20more.gif" width="300px" style="border-width:5px;border-style:solid;border-color:white;"/>
 </p>
 
 ## Getting Started
