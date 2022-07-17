@@ -1,6 +1,6 @@
 <div align = center>
   
-  <img src='android/app/src/main/res/mipmap-mdpi/splash_logo.png' width='200'>
+  <img src='https://cdn.discordapp.com/attachments/787712939133108275/998339081593421994/splash_logo_1.png' width='200'>
   
 
 # Know More
