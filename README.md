@@ -2,6 +2,8 @@
 
 ![View Counter](https://komarev.com/ghpvc/?username=flutter_news_app&label=View%20Counter&color=red&style=flat) &nbsp; &nbsp; ![Repo Size](https://img.shields.io/github/repo-size/AjCodez/flutter_news_app?color=blue)
   
+  <img src='android/app/src/main/res/mipmap-mdpi/splash_logo.png' width='200'>
+  
 </div>
 # Know More
 A news app to keep yourself updated with latest things happening around you.
