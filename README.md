@@ -18,7 +18,7 @@
   
   ---
   
-**[<kbd> <br> **Know More** <br> </kbd>][universal-release]** &nbsp;&nbsp;
+**[<kbd> <br> **Know More App** <br> </kbd>][universal-release]** &nbsp;&nbsp;
   
   ---
 
