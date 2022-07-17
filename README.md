@@ -18,7 +18,7 @@
   
   ---
   
-**[<kbd> <br> **Universal Release** <br> </kbd>][universal-release]** &nbsp;&nbsp;
+**[<kbd> <br> **Know More** <br> </kbd>][universal-release]** &nbsp;&nbsp;
   
   ---
 
