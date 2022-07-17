@@ -26,7 +26,7 @@
 **[<kbd> <br> **Source Code (zip)** <br> </kbd>][sc-zip]**&nbsp;&nbsp;
 **[<kbd> <br> **Source Code (tar.gz)** <br> </kbd>][sc-tar.gz]**
 
-
+</div>
 
 ## Getting Started
 
