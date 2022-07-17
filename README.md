@@ -71,7 +71,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Contributors:
 
-<a href="https://github.com/AjCodez/flutter_news_app/graphs/contributors" target="blank"> <img src="https://contrib.rocks/image?repo=AjCodez/flutter_news_app&max=500" /></a>
+<a href="https://github.com/AjCodez/flutter_news_app/graphs/contributors" target="blank"> <img src="https://contrib.rocks/image?repo=AjCodez/flutter_news_app&max=3" /></a>
 
 </div>
 
