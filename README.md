@@ -16,6 +16,17 @@
   <img src="https://github.com/AjCodez/flutter_news_app/blob/master/Screenshots/know%20more.gif" width="300px" style="border-width:5px;border-style:solid;border-color:white;"/>
 </p>
   
+  ## ![][android] Download APK
+  
+  **[<kbd> <br> **Universal Release** <br> </kbd>][universal-release]** &nbsp;&nbsp;
+**[<kbd> <br> **arm64** <br> </kbd>][arm64]**&nbsp;&nbsp;
+**[<kbd> <br> **x64** <br> </kbd>][x64]**&nbsp;&nbsp;
+**[<kbd> <br> **armabi** <br> </kbd>][armabi]**&nbsp;&nbsp;
+**[<kbd> <br> **ios Release** <br> </kbd>][ios]**&nbsp;&nbsp;
+**[<kbd> <br> **Source Code (zip)** <br> </kbd>][sc-zip]**&nbsp;&nbsp;
+**[<kbd> <br> **Source Code (tar.gz)** <br> </kbd>][sc-tar.gz]**
+
+  
     </div>
 
 ## Getting Started
