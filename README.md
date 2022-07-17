@@ -33,11 +33,53 @@
 
 This project is a starting point for a Flutter application.
 
+
+
+### Navigation and Routing
+
+- Flutter Navigator is just a stack with special methods like (future, futurebuilder, theme, etc).
+- Screens/Routes are just widgets.
+- Navigation from one route to another defines workflow of application.
+
+### State Management
+
+- Stateless/Statefull widgets.
+- Flutter reflects its UI by reflecting current state.
+- State is read while widget is built and can be changed using setState() for Stateful widgets.
+
+### Object Oriented Approach
+
+- Handling various functionalities by binding them in Class and creating Objects of them.
+- Reusability of Code, Reducing Redundancy.
+
+### Use of 3rd Party Packages
+
+- Use of external packages provide application with variety of usefull functionalities.
+- Make Application Standout.
+
+
+
 A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
+
+
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+<!------------------------------------{ apk }----------------------------------->
+
+[universal-release]: https://github.com/Khushal-ag/calculator/releases/download/v0.1.0/Calculator-v0.1.0-universal-release.apk
+[arm64]: https://github.com/Khushal-ag/calculator/releases/download/v0.1.0/Calculator-v0.1.0-arm64.apk
+[x64]: https://github.com/Khushal-ag/calculator/releases/download/v0.1.0/Calculator-v0.1.0-x64.apk
+[armabi]: https://github.com/Khushal-ag/calculator/releases/download/v0.1.0/Calculator-v0.1.0-armeabi.apk
+[ios]: https://github.com/Khushal-ag/calculator/releases/download/v0.1.0/Payload.ipa
+
+<!--------------------------------{ source code }------------------------------->
+
+[sc-zip]: https://github.com/Khushal-ag/calculator/archive/refs/tags/v0.1.0.zip
+[sc-tar.gz]: https://github.com/Khushal-ag/calculator/archive/refs/tags/v0.1.0.tar.gz
