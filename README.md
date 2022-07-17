@@ -68,6 +68,14 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
+<div align = center>
+
+## Contributors:
+
+<a href="https://github.com/AjCodez/flutter_news_app/graphs/contributors" target="blank"> <img src="https://contrib.rocks/image?repo=AjCodez/flutter_news_app&max=500" /></a>
+
+</div>
+
 
 <!------------------------------------{ apk }----------------------------------->
 
