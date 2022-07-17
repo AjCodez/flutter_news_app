@@ -1,5 +1,5 @@
 <div align = center>
-![Repo Size](https://img.shields.io/github/repo-size/harsh-sharma-z/flutter_news_app?color=blue)
+&nbsp; &nbsp; ![Repo Size](https://img.shields.io/github/repo-size/harsh-sharma-z/flutter_news_app?color=blue)
   
   <img src='android/app/src/main/res/mipmap-mdpi/splash_logo.png' width='200'>
   
