@@ -18,7 +18,11 @@
   
   ## ![][android] Download APK
   
-  **[<kbd> <br> **Universal Release** <br> </kbd>][universal-release]** &nbsp;&nbsp;
+  ---
+  
+**[<kbd> <br> **Universal Release** <br> </kbd>][universal-release]** &nbsp;&nbsp;
+  
+  ---
 
 
 </div>
@@ -67,4 +71,6 @@ samples, guidance on mobile development, and a full API reference.
 
 <!------------------------------------{ apk }----------------------------------->
 
-[universal-release]: [https://github.com/harsh-sharma-z/flutter_news_app/blob/master/releases/download/v0.1.0/app-release.apk]
+[universal-release]: https://github.com/harsh-sharma-z/flutter_news_app/blob/master/releases/download/v0.1.0/app-release.apk
+
+[android]: https://telegra.ph/file/f2f70a74d2d92c3c7f688.png
