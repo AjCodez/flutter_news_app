@@ -3,7 +3,6 @@
   <img src='https://cdn.discordapp.com/attachments/787712939133108275/998339081593421994/splash_logo_1.png' width='200'>
   
 
-# Know More
 ### A news app to keep yourself updated with latest things happening around you.
   
 
