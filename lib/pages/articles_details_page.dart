@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:newsapp/model/article_model.dart';
 import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -63,8 +64,9 @@ class _ArticlePageState extends State<ArticlePage> {
             },
             onSelected: (value) async {
               if (value == MenuAction.browser) {
-                if (await canLaunchUrl(Uri.parse(widget.article.url))) {
-                  await launchUrl(Uri.parse(widget.article.url));
+                if (await canLaunchUrlString(widget.article.url)) {
+                  await launchUrlString(widget.article.url,
+                      mode: LaunchMode.externalApplication);
                 } else {
                   throw "Could not launch";
                 }
