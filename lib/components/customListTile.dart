@@ -5,8 +5,6 @@ import 'package:newsapp/model/article_model.dart';
 import 'package:newsapp/pages/articles_details_page.dart';
 import 'package:flutter/material.dart';
 
-import '../main.dart';
-
 Widget customListTile(Article article, BuildContext context) {
   return InkWell(
     onTap: () {
