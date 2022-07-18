@@ -64,6 +64,7 @@ This project is a starting point for a Flutter application.
 <kbd> <br> **http**: ^0.13.4 <br> </kbd>
 <kbd> <br> **url_launcher**: ^6.1.5 <br> </kbd>
 <kbd> <br> **share_plus**: ^4.0.10 <br> </kbd>
+<kbd> <br> **drawerbehavior**: ^0.0.4 <br> </kbd>
 
 ## Directory Structure
 
