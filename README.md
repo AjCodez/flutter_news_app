@@ -10,7 +10,7 @@
 # App UI
 
 <p align="center">
-  <img src="https://github.com/AjCodez/flutter_news_app/blob/master/Screenshots/know%20more.gif" width="300px" style="border-width:5px;border-style:solid;border-color:white;"/>
+  <img src="https://cdn.discordapp.com/attachments/787712939133108275/996808853985439785/know_more_2.gif" width="300px" style="border-width:5px;border-style:solid;border-color:white;"/>
 </p>
   
   ## ![][android] Download APK
