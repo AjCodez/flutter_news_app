@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:newsapp/model/article_model.dart';
 import 'package:flutter/material.dart';
+import 'package:share_plus/share_plus.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -35,17 +36,27 @@ class _ArticlePageState extends State<ArticlePage> {
                 PopupMenuItem<MenuAction>(
                   value: MenuAction.browser,
                   child: Text("Open in browser"),
+                ),
+                PopupMenuItem<MenuAction>(
+                  value: MenuAction.share,
+                  child: Text("Share"),
                 )
               ];
             },
             onSelected: (value) async {
-              if (await canLaunchUrl(Uri.parse(widget.article.url))) {
-                await launchUrl(Uri.parse(widget.article.url));
-              } else {
-                throw "Could not launch";
+              if (value == MenuAction.browser) {
+                if (await canLaunchUrl(Uri.parse(widget.article.url))) {
+                  await launchUrl(Uri.parse(widget.article.url));
+                } else {
+                  throw "Could not launch";
+                }
+              } else if (value == MenuAction.share) {
+                final url = widget.article.url;
+                await Share.share(
+                    'Check out this news via Know More app : $url');
               }
             },
-          )
+          ),
         ],
       ),
       body: WebView(

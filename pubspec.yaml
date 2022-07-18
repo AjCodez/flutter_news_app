@@ -38,6 +38,7 @@ dependencies:
   http: ^0.13.4
   drawerbehavior: ^0.0.4
   url_launcher: ^6.1.5
+  share_plus: ^4.0.10
 
 dev_dependencies:
   flutter_test:
