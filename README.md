@@ -17,6 +17,8 @@
   
   ---
   
+  [![made-with-flutter](https://img.shields.io/badge/Made%20with-Flutter-1f425f.svg)](https://flutter.dev/) ![Release](https://img.shields.io/github/v/release/Kashish0401/flutter_news_app)
+  <br>
 **[<kbd> <br> **Know More App** <br> </kbd>][universal-release]** &nbsp;&nbsp;
   
   ---
@@ -52,19 +54,44 @@ This project is a starting point for a Flutter application.
 - Use of external packages provide application with variety of usefull functionalities.
 - Make Application Standout.
 
+<div align=center>
 
+## Dependencies Used
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<kbd> <br> **webview_flutter**: ^3.0.4 <br> </kbd>
+<kbd> <br> **webview_flutter**: ^3.0.4 <br> </kbd>
+<kbd> <br> **http**: ^0.13.4 <br> </kbd>
 
+## Directory Structure
 
+</div>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
+```
+calculator
+|
+|-- lib
+|   |-- components
+|   |   |-- customListTile.dart
+|   |   `-- DrawerTile.dart
+|   |
+|   |-- models
+|   |   |-- article_model.dart
+|   |   `-- source_model.dart
+|   |
+|   |-- pages
+|   |   |-- article_details_page.dart
+|   |   |-- HomePage.dart
+|   |   `-- NewsPage.dart
+|   |
+|   |-- services
+|   |   `-- api_service.dart
+|   |
+|   `-- main.dart
+|
+`-- pubspec.yaml
+```
 
 <div align = center>
 
