@@ -32,14 +32,32 @@ class _ArticlePageState extends State<ArticlePage> {
         actions: [
           PopupMenuButton<MenuAction>(
             itemBuilder: (context) {
-              return const [
+              return [
                 PopupMenuItem<MenuAction>(
                   value: MenuAction.browser,
-                  child: Text("Open in browser"),
+                  child: Row(
+                    children: const [
+                      Icon(
+                        Icons.open_in_browser,
+                        size: 25,
+                      ),
+                      SizedBox(width: 10),
+                      Text("Open in Browser"),
+                    ],
+                  ),
                 ),
                 PopupMenuItem<MenuAction>(
                   value: MenuAction.share,
-                  child: Text("Share"),
+                  child: Row(
+                    children: const [
+                      Icon(
+                        Icons.share,
+                        size: 20,
+                      ),
+                      SizedBox(width: 10),
+                      Text("Share"),
+                    ],
+                  ),
                 )
               ];
             },
