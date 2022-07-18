@@ -93,6 +93,40 @@ Know More
 `-- pubspec.yaml
 ```
 
+<h3> Functionalities </h3>
+
+- Sun (Light) and Moon (Dark) Themes
+- Latest news Snippets of all across India
+- Drawer which allows easy selection of news
+    - Business
+    - Entertainment
+    - Sports
+    - Health
+    - Science
+    - Technology
+- WebView to read the detailed news
+
+<h3> Pre-Requisities </h3>
+
+To build this app from scratch you will need to install Flutter and Dart SDK on your machine:
+[Flutter](https://flutter.dev/docs/get-started/install), [Dart](https://dart.dev/get-dart/archive).
+<br>Along with this, you will need editor to work on codes like this namely [VSCode](https://code.visualstudio.com/)
+or [IntelliJ IDEA](https://www.jetbrains.com/pt-br/idea/).
+
+<h3> How to Run this App </h3>
+
+```bash
+# Clone this repository
+$ git clone https://github.com/Kashish0401/flutter_news_app
+
+# Install dependencies
+$ flutter pub get
+
+# Run the APP on the open device (Android or IOS)
+$ flutter run
+```
+
+
 <div align = center>
 
 ## Contributors:
