@@ -7,8 +7,9 @@ import 'package:http/http.dart';
 class ApiService {
   Future<List<Article>> getArticle(String cat) async {
     String category = cat;
-    Response res = await get(
-        "http://newsapi.org/v2/top-headlines?country=in&category=$category&apiKey=504b3bd564c84625aa36b2148c04a0ef");
+    Response res = await get(Uri.parse(
+        "http://newsapi.org/v2/top-headlines?country=in&category=$category&apiKey=504b3bd564c84625aa36b2148c04a0ef"));
+
     if (res.statusCode == 200) {
       Map<String, dynamic> json = jsonDecode(res.body);
 
