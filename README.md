@@ -61,7 +61,6 @@ This project is a starting point for a Flutter application.
 ---
 
 <kbd> <br> **webview_flutter**: ^3.0.4 <br> </kbd>
-<kbd> <br> **webview_flutter**: ^3.0.4 <br> </kbd>
 <kbd> <br> **http**: ^0.13.4 <br> </kbd>
 <kbd> <br> **url_launcher**: ^6.1.5 <br> </kbd>
 <kbd> <br> **share_plus**: ^4.0.10 <br> </kbd>
@@ -107,6 +106,8 @@ Know More
     - Science
     - Technology
 - WebView to read the detailed news
+- Open news in external web browser
+- Share news url
 
 <h3> Pre-Requisities </h3>
 
