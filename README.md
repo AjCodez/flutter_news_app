@@ -69,7 +69,7 @@ This project is a starting point for a Flutter application.
 </div>
 
 ```
-calculator
+Know More
 |
 |-- lib
 |   |-- components
