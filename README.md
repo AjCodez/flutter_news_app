@@ -137,6 +137,6 @@ $ flutter run
 
 <!------------------------------------{ apk }----------------------------------->
 
-[universal-release]: https://github.com/harsh-sharma-z/flutter_news_app/blob/master/releases/download/v0.1.0/app-release.apk
+[universal-release]: https://github.com/AjCodez/flutter_news_app/releases/download/v1.1.0/app.apk
 
 [android]: https://telegra.ph/file/f2f70a74d2d92c3c7f688.png
