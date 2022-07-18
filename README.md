@@ -63,6 +63,8 @@ This project is a starting point for a Flutter application.
 <kbd> <br> **webview_flutter**: ^3.0.4 <br> </kbd>
 <kbd> <br> **webview_flutter**: ^3.0.4 <br> </kbd>
 <kbd> <br> **http**: ^0.13.4 <br> </kbd>
+<kbd> <br> **url_launcher**: ^6.1.5 <br> </kbd>
+<kbd> <br> **share_plus**: ^4.0.10 <br> </kbd>
 
 ## Directory Structure
 
