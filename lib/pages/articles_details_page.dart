@@ -1,5 +1,5 @@
 import 'dart:io';
-
+import 'package:newsapp/main.dart';
 import 'package:newsapp/model/article_model.dart';
 import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
@@ -25,6 +25,25 @@ class _ArticlePageState extends State<ArticlePage> {
     if (Platform.isAndroid) WebView.platform = AndroidWebView();
   }
 
+  Row PopUpMenuTile(IconData iconData, String text) {
+    return Row(
+      children: [
+        Icon(
+          iconData,
+          size: 25,
+          color: MyApp.themeNotifier.value == ThemeMode.light
+              ? Colors.black
+              : Colors.white,
+        ),
+        const SizedBox(width: 10),
+        Text(
+          text,
+          style: TextStyle(fontSize: 18),
+        ),
+      ],
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,31 +54,13 @@ class _ArticlePageState extends State<ArticlePage> {
             itemBuilder: (context) {
               return [
                 PopupMenuItem<MenuAction>(
-                  value: MenuAction.browser,
-                  child: Row(
-                    children: const [
-                      Icon(
-                        Icons.open_in_browser,
-                        size: 25,
-                      ),
-                      SizedBox(width: 10),
-                      Text("Open in Browser"),
-                    ],
-                  ),
-                ),
+                    value: MenuAction.browser,
+                    child: PopUpMenuTile(
+                        Icons.open_in_browser, 'Open in browser')),
                 PopupMenuItem<MenuAction>(
                   value: MenuAction.share,
-                  child: Row(
-                    children: const [
-                      Icon(
-                        Icons.share,
-                        size: 20,
-                      ),
-                      SizedBox(width: 10),
-                      Text("Share"),
-                    ],
-                  ),
-                )
+                  child: PopUpMenuTile(Icons.share, 'Share'),
+                ),
               ];
             },
             onSelected: (value) async {
