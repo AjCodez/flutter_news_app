@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
               drawerTheme: const DrawerThemeData(
                 backgroundColor: Color(0xFFE9EEF2),
               ),
-              iconTheme: const IconThemeData(size: 30),
+              iconTheme: const IconThemeData(size: 30, color: Colors.black),
             ),
             darkTheme: ThemeData.dark().copyWith(
               iconTheme: const IconThemeData(size: 30, color: Colors.white),
