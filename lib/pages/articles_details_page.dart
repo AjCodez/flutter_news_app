@@ -36,7 +36,10 @@ class _ArticlePageState extends State<ArticlePage> {
               : Colors.white,
         ),
         const SizedBox(width: 10),
-        Text(text),
+        Text(
+          text,
+          style: TextStyle(fontSize: 18),
+        ),
       ],
     );
   }
