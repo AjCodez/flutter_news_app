@@ -1,11 +1,8 @@
 <div align = center>
   
   <img src='https://cdn.discordapp.com/attachments/787712939133108275/998339081593421994/splash_logo_1.png' width='200'>
-  
 
 ### A news app to keep yourself updated with latest things happening around you.
-  
-
 
 # App UI
 
@@ -19,18 +16,11 @@
   
   [![made-with-flutter](https://img.shields.io/badge/Made%20with-Flutter-1f425f.svg)](https://flutter.dev/) ![Release](https://img.shields.io/github/v/release/Kashish0401/flutter_news_app)
   <br>
-**[<kbd> <br> **Know More App** <br> </kbd>][universal-release]** &nbsp;&nbsp;
+**[<kbd> <br> **Know More App** <br> </kbd>][universal-release]**
   
   ---
-
-
+## 👨‍🎓 Things We learned through this project
 </div>
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-
 
 ### Navigation and Routing
 
@@ -60,11 +50,11 @@ This project is a starting point for a Flutter application.
 
 ---
 
-<kbd> <br> **webview_flutter**: ^3.0.4 <br> </kbd>
-<kbd> <br> **http**: ^0.13.4 <br> </kbd>
-<kbd> <br> **url_launcher**: ^6.1.5 <br> </kbd>
-<kbd> <br> **share_plus**: ^4.0.10 <br> </kbd>
-<kbd> <br> **drawerbehavior**: ^0.0.4 <br> </kbd>
+[<kbd> <br> **http**: ^0.13.4 <br> </kbd>][http]
+[<kbd> <br> **share_plus**: ^4.0.10 <br> </kbd>][share_plus]
+[<kbd> <br> **webview_flutter**: ^3.0.4 <br> </kbd>][webview_flutter]
+[<kbd> <br> **url_launcher**: ^6.1.5 <br> </kbd>][url_launcher]
+[<kbd> <br> **drawerbehavior**: ^0.0.4 <br> </kbd>][drawerbehavior]
 
 ## Directory Structure
 
@@ -100,12 +90,12 @@ Know More
 - Sun (Light) and Moon (Dark) Themes
 - Latest news Snippets of all across India
 - Drawer which allows easy selection of news
-    - Business
-    - Entertainment
-    - Sports
-    - Health
-    - Science
-    - Technology
+  - Business
+  - Entertainment
+  - Sports
+  - Health
+  - Science
+  - Technology
 - WebView to read the detailed news
 - Open news in external web browser
 - Share news url
@@ -130,7 +120,6 @@ $ flutter pub get
 $ flutter run
 ```
 
-
 <div align = center>
 
 ## Contributors:
@@ -144,3 +133,11 @@ $ flutter run
 [universal-release]: https://github.com/AjCodez/flutter_news_app/releases/download/v1.1.3/Know-More.apk
 
 [android]: https://telegra.ph/file/f2f70a74d2d92c3c7f688.png
+
+<!-----------------------------{ dependencies used }---------------------------->
+
+[http]: https://pub.dev/packages/http
+[webview_flutter]: https://pub.dev/packages/webview_flutter
+[share_plus]: https://pub.dev/packages/share_plus
+[drawerbehavior]: https://pub.dev/packages/drawerbehavior
+[url_launcher]: https://pub.dev/packages/url_launcher
