@@ -130,7 +130,8 @@ $ flutter run
 
 <!------------------------------------{ apk }----------------------------------->
 
-[universal-release]: https://github.com/AjCodez/flutter_news_app/releases/download/v1.1.0/app.apk
+[universal-release]: https://github.com/AjCodez/flutter_news_app/releases/download/v1.1.3/Know-More.apk
+
 [android]: https://telegra.ph/file/f2f70a74d2d92c3c7f688.png
 
 <!-----------------------------{ dependencies used }---------------------------->
