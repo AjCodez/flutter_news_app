@@ -1,5 +1,5 @@
 import 'dart:io';
-
+import 'package:newsapp/main.dart';
 import 'package:newsapp/model/article_model.dart';
 import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
@@ -31,6 +31,9 @@ class _ArticlePageState extends State<ArticlePage> {
         Icon(
           iconData,
           size: 25,
+          color: MyApp.themeNotifier.value == ThemeMode.light
+              ? Colors.black
+              : Colors.white,
         ),
         const SizedBox(width: 10),
         Text(text),
