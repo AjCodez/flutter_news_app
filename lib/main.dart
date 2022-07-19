@@ -24,20 +24,20 @@ class MyApp extends StatelessWidget {
               appBarTheme: const AppBarTheme(
                 color: Color(0xFF169EAD),
               ),
-              primaryColor: Color(0xFFD6E3E3),
-              scaffoldBackgroundColor: Color(0xFFEAEBED),
-              drawerTheme: DrawerThemeData(
+              primaryColor: const Color(0xFFD6E3E3),
+              scaffoldBackgroundColor: const Color(0xFFEAEBED),
+              drawerTheme: const DrawerThemeData(
                 backgroundColor: Color(0xFFE9EEF2),
               ),
-              iconTheme: IconThemeData(size: 30, color: Colors.black),
+              iconTheme: const IconThemeData(size: 30, color: Colors.black),
             ),
             darkTheme: ThemeData.dark().copyWith(
-              iconTheme: IconThemeData(size: 30, color: Colors.white),
+              iconTheme: const IconThemeData(size: 30, color: Colors.white),
             ),
             themeMode: currentMode,
             home: const HomePage(),
             routes: {
-              '/news/': (context) => NewsBuilder(),
+              '/news/': (context) => const NewsBuilder(),
             },
           );
         });
